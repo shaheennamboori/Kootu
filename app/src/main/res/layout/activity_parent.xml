@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ParentActivity">
+
+    <TextView
+        android:id="@+id/foodbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@color/lightgreen"
+        android:gravity="center"
+        android:text="Food"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textsize2" />
+
+    <TextView
+        android:id="@+id/familybtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@color/lightgreen"
+        android:gravity="center"
+        android:text="Family"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textsize2" />
+
+</LinearLayout>
