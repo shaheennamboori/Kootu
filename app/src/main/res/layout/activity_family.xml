@@ -1,9 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".FamilyActivity">
+    android:layout_height="wrap_content">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".FamilyActivity">
+
+        <TextView
+            android:id="@+id/achan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/lightgreen"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="Achan"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize2" />
+
+        <TextView
+            android:id="@+id/amma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/lightgreen"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="Amma"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize2" />
+
+        <TextView
+            android:id="@+id/chechi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="Chechi"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize2" />
+
+        <TextView
+            android:id="@+id/aniyan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="Aniyan"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize2" />
+
+        <TextView
+            android:id="@+id/chettan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/lightgreen"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="Chettan"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/lightgreen"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="Valyechi"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="valyettan"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="Vava"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize2" />
+
+    </LinearLayout>
+</ScrollView>
