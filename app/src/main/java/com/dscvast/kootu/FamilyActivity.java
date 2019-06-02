@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class FamilyActivity extends AppCompatActivity implements View.OnClickListener {
-    private final int[] resID = {R.raw.sond};
+    private final int[] resID = {R.raw.achan, R.raw.amma, R.raw.chettan, R.raw.chechi, R.raw.aniyan};
     TextView achan, amma, chetan, chechi, aniyan;
     private MediaPlayer mp;
 
@@ -35,16 +35,16 @@ public class FamilyActivity extends AppCompatActivity implements View.OnClickLis
                 playSong(0);
                 break;
             case R.id.amma:
-                playSong(0);
+                playSong(1);
                 break;
             case R.id.chettan:
-                playSong(0);
+                playSong(2);
                 break;
             case R.id.chechi:
-                playSong(0);
+                playSong(3);
                 break;
             case R.id.aniyan:
-                playSong(0);
+                playSong(4);
         }
     }
 
