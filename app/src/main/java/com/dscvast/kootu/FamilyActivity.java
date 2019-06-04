@@ -7,8 +7,8 @@ import android.view.View;
 import android.widget.TextView;
 
 public class FamilyActivity extends AppCompatActivity implements View.OnClickListener {
-    private final int[] resID = {R.raw.achan, R.raw.amma, R.raw.chettan, R.raw.chechi, R.raw.aniyan};
-    TextView achan, amma, chetan, chechi, aniyan;
+    private final int[] resID = {R.raw.achan, R.raw.amma, R.raw.chettan, R.raw.chechi, R.raw.aniyan, R.raw.aniyathi};
+    TextView achan, amma, chetan, chechi, aniyan, aniyathi;
     private MediaPlayer mp;
 
     @Override
@@ -21,11 +21,13 @@ public class FamilyActivity extends AppCompatActivity implements View.OnClickLis
         chetan = findViewById(R.id.chettan);
         chechi = findViewById(R.id.chechi);
         aniyan = findViewById(R.id.aniyan);
+        aniyathi = findViewById(R.id.aniyathi);
         achan.setOnClickListener(this);
         amma.setOnClickListener(this);
         chetan.setOnClickListener(this);
         aniyan.setOnClickListener(this);
         chechi.setOnClickListener(this);
+        aniyathi.setOnClickListener(this);
     }
 
     @Override
@@ -45,6 +47,9 @@ public class FamilyActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.aniyan:
                 playSong(4);
+                break;
+            case R.id.aniyathi:
+                playSong(5);
         }
     }
 
