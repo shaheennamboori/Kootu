@@ -16,27 +16,29 @@
 
         <TextView
             android:id="@+id/idli"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            android:gravity="center"
             android:layout_margin="20dp"
-            android:text="IDLI"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/textsize" />
+            android:layout_weight="1"
+            android:background="@drawable/idli"
+            android:gravity="center"
+            android:text="Idly ഇഡലി "
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="@dimen/textsize"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/dosa"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            android:gravity="center"
             android:layout_margin="20dp"
-            android:textColor="@android:color/white"
-            android:text="DOSA"
-            android:textSize="@dimen/textsize" />
+            android:layout_weight="1"
+            android:background="@drawable/dosa"
+            android:gravity="center"
+            android:text="Dosa ദോശ "
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="@dimen/textsize"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
@@ -48,27 +50,30 @@
 
         <TextView
             android:id="@+id/upma"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="20dp"
             android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:background="@color/lightgreen"
+            android:background="@drawable/upma"
             android:gravity="center"
-            android:textColor="@android:color/black"
-            android:text="UPMA"
-            android:textSize="@dimen/textsize" />
+            android:text="Upma ഉപ്പുമാവ് "
+            android:textAlignment="center"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="33sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/putt"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_width="wrap_content"
             android:layout_margin="20dp"
             android:layout_weight="1"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/puttu"
             android:gravity="center"
-            android:textColor="@android:color/white"
-            android:text="PUTT"
-            android:textSize="@dimen/textsize" />
+            android:text="Puttu പുട്ട് "
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="40sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -81,26 +86,28 @@
 
         <TextView
             android:id="@+id/rice"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="20dp"
             android:layout_weight="1"
-            android:background="@color/lightgreen"
+            android:background="@drawable/rice"
             android:gravity="center"
-            android:text="RICE"
-            android:textColor="@android:color/black"
-            android:textSize="@dimen/textsize" />
+            android:text="Rice ചോറ് "
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="@dimen/textsize"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/chappathi"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="20dp"
             android:layout_weight="1"
-            android:background="@color/lightgreen"
+            android:background="@drawable/cpathi"
             android:gravity="center"
-            android:text="CHAPPATHI"
-            android:textColor="@android:color/black"
-            android:textSize="@dimen/textsize" />
+            android:text="Chapathi ചപ്പാത്തി "
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="32sp"
+            android:textStyle="bold" />
     </LinearLayout>
 </LinearLayout>

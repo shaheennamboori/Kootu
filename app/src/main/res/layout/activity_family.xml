@@ -1,106 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         tools:context=".FamilyActivity">
 
         <TextView
             android:id="@+id/achan"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="110dp"
             android:layout_margin="3dp"
-            android:background="@color/lightgreen"
+            android:background="@drawable/achan"
             android:gravity="center"
             android:padding="30dp"
-            android:text="Achan"
             android:textColor="@android:color/black"
             android:textSize="@dimen/textsize2" />
 
         <TextView
             android:id="@+id/amma"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="110dp"
             android:layout_margin="3dp"
-            android:background="@color/lightgreen"
+            android:background="@drawable/amma"
             android:gravity="center"
             android:padding="30dp"
-            android:text="Amma"
             android:textColor="@android:color/black"
             android:textSize="@dimen/textsize2" />
 
         <TextView
             android:id="@+id/chechi"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="116dp"
             android:layout_margin="3dp"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/chechi"
             android:gravity="center"
             android:padding="30dp"
-            android:text="Chechi"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/textsize2" />
-
-        <TextView
-            android:id="@+id/aniyan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="3dp"
-            android:background="@color/colorPrimary"
-            android:gravity="center"
-            android:padding="30dp"
-            android:text="Aniyan"
             android:textColor="@android:color/white"
             android:textSize="@dimen/textsize2" />
 
         <TextView
             android:id="@+id/chettan"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="117dp"
             android:layout_margin="3dp"
-            android:background="@color/lightgreen"
+            android:background="@drawable/chettan"
             android:gravity="center"
             android:padding="30dp"
-            android:text="Chettan"
             android:textColor="@android:color/black"
             android:textSize="@dimen/textsize2" />
 
         <TextView
+            android:id="@+id/aniyathi"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="113dp"
             android:layout_margin="3dp"
-            android:background="@color/lightgreen"
-            android:gravity="center"
+            android:background="@drawable/aniyathi"
             android:padding="30dp"
-            android:text="Valyechi"
             android:textColor="@android:color/black"
             android:textSize="@dimen/textsize2" />
 
         <TextView
+            android:id="@+id/aniyan"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="115dp"
             android:layout_margin="3dp"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/aniyan"
             android:gravity="center"
             android:padding="30dp"
-            android:text="valyettan"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/textsize2" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="3dp"
-            android:background="@color/colorPrimary"
-            android:gravity="center"
-            android:padding="30dp"
-            android:text="Vava"
             android:textColor="@android:color/white"
             android:textSize="@dimen/textsize2" />
 
