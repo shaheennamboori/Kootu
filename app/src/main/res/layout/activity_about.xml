@@ -2,17 +2,33 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".AboutActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="v1.0"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:typeface="normal"/>
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_above="@+id/heading"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"
-        android:src="@drawable/achan" />
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/developed1" />
 
     <TextView
         android:id="@+id/heading"
@@ -21,6 +37,7 @@
         android:layout_centerInParent="true"
         android:fontFamily="@font/montserrat"
         android:text="@string/lead_developers"
+        android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="30sp"
         android:textStyle="bold" />
@@ -35,18 +52,19 @@
         <ImageView
             android:id="@+id/dev1"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
+            android:layout_height="299dp"
+            android:layout_margin="5dp"
             android:layout_weight="1"
             android:src="@drawable/shaheen" />
 
         <ImageView
             android:id="@+id/dev2"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_height="297dp"
+            android:layout_margin="5dp"
             android:layout_weight="1"
             android:src="@drawable/hemanth" />
 
     </LinearLayout>
+
 </RelativeLayout>
