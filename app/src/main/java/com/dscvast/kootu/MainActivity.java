@@ -1,10 +1,14 @@
 package com.dscvast.kootu;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Switch;
 import android.widget.TextView;
+import android.view.Menu;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     TextView idli, dosa, upma, putt, rice, chappathi;
@@ -28,6 +32,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         rice.setOnClickListener(this);
         chappathi = findViewById(R.id.chappathi);
         chappathi.setOnClickListener(this);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.settings:
+                Intent intent1 = new Intent(getApplicationContext(), SettingsActivity.class);
+                startActivity(intent1);
+                break;
+            case R.id.about:
+                Intent intent2 = new Intent(getApplicationContext(), AboutActivity.class);
+                startActivity(intent2);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
