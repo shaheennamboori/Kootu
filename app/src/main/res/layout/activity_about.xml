@@ -28,7 +28,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="85dp"
         android:layout_marginBottom="0dp"
-        android:src="@drawable/developed1" />
+        android:src="@drawable/developed2" />
 
     <TextView
         android:id="@+id/heading"
@@ -55,7 +55,7 @@
             android:layout_height="299dp"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:src="@drawable/shaheen" />
+            android:src="@drawable/shaheen1" />
 
         <ImageView
             android:id="@+id/dev2"
@@ -63,7 +63,7 @@
             android:layout_height="297dp"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:src="@drawable/hemanth" />
+            android:src="@drawable/hemanth1" />
 
     </LinearLayout>
 
