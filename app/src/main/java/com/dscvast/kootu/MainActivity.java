@@ -2,36 +2,48 @@ package com.dscvast.kootu;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Switch;
 import android.widget.TextView;
-import android.view.Menu;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    TextView idli, dosa, upma, putt, rice, chappathi;
-    private final int[] resID = {R.raw.idli, R.raw.dosa, R.raw.upma, R.raw.puttu, R.raw.choru, R.raw.chapathi};
+import static java.util.Objects.requireNonNull;
+
+public class MainActivity extends AppCompatActivity
+        implements View.OnClickListener {
+
+    private final int[] resID = { R.raw.idli, R.raw.dosa, R.raw.upma, R.raw.puttu, R.raw.choru, R.raw.chapathi };
     private MediaPlayer mp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         mp = new MediaPlayer();
-        idli = findViewById(R.id.idli);
+
+        TextView idli = findViewById(R.id.idli);
+        TextView dosa = findViewById(R.id.dosa);
+        TextView upma = findViewById(R.id.upma);
+        TextView putt = findViewById(R.id.putt);
+        TextView rice = findViewById(R.id.rice);
+        TextView chappathi = findViewById(R.id.chappathi);
+
         idli.setOnClickListener(this);
-        dosa = findViewById(R.id.dosa);
         dosa.setOnClickListener(this);
-        upma = findViewById(R.id.upma);
         upma.setOnClickListener(this);
-        putt = findViewById(R.id.putt);
         putt.setOnClickListener(this);
-        rice = findViewById(R.id.rice);
         rice.setOnClickListener(this);
-        chappathi = findViewById(R.id.chappathi);
         chappathi.setOnClickListener(this);
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return super.onSupportNavigateUp();
     }
 
     @Override
@@ -78,23 +90,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    public void playSong(int songIndex) {
-// Play song
-        mp.reset();// stops any current playing song
-        mp = MediaPlayer.create(getApplicationContext(), resID[songIndex]);// create's
-// new
-// mediaplayer
-// with
-// song.
-
-        mp.start(); // starting mediaplayer
-
+    private void playSong(int songIndex) {
+        mp.reset(); //stop current song
+        mp = MediaPlayer.create(getApplicationContext(), resID[songIndex]); // instantiate media player with new song
+        mp.start(); // start media player
     }
 
     @Override
     public void onDestroy() {
+        if (mp != null) {
+            mp.release();
+        }
         super.onDestroy();
-        mp.release();
     }
-
 }

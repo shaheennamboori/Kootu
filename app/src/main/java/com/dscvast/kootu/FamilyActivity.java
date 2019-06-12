@@ -2,35 +2,48 @@ package com.dscvast.kootu;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-public class FamilyActivity extends AppCompatActivity implements View.OnClickListener {
-    private final int[] resID = {R.raw.achan, R.raw.amma, R.raw.chettan, R.raw.chechi, R.raw.aniyan, R.raw.aniyathi};
-    TextView achan, amma, chetan, chechi, aniyan, aniyathi;
+import static java.util.Objects.requireNonNull;
+
+public class FamilyActivity extends AppCompatActivity
+        implements View.OnClickListener {
+
+    private final int[] resID = { R.raw.achan, R.raw.amma, R.raw.chettan, R.raw.chechi, R.raw.aniyan, R.raw.aniyathi };
     private MediaPlayer mp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_family);
+
+        requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         mp = new MediaPlayer();
-        achan = findViewById(R.id.achan);
-        amma = findViewById(R.id.amma);
-        chetan = findViewById(R.id.chettan);
-        chechi = findViewById(R.id.chechi);
-        aniyan = findViewById(R.id.aniyan);
-        aniyathi = findViewById(R.id.aniyathi);
+
+        TextView achan = findViewById(R.id.achan);
+        TextView amma = findViewById(R.id.amma);
+        TextView chetan = findViewById(R.id.chettan);
+        TextView chechi = findViewById(R.id.chechi);
+        TextView aniyan = findViewById(R.id.aniyan);
+        TextView aniyathi = findViewById(R.id.aniyathi);
+
         achan.setOnClickListener(this);
         amma.setOnClickListener(this);
         chetan.setOnClickListener(this);
         aniyan.setOnClickListener(this);
         chechi.setOnClickListener(this);
         aniyathi.setOnClickListener(this);
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return super.onSupportNavigateUp();
     }
 
     @Override
@@ -77,22 +90,17 @@ public class FamilyActivity extends AppCompatActivity implements View.OnClickLis
         }
     }
 
-    public void playSong(int songIndex) {
-// Play song
-        mp.reset();// stops any current playing song
-        mp = MediaPlayer.create(getApplicationContext(), resID[songIndex]);// create's
-// new
-// mediaplayer
-// with
-// song.
-
-        mp.start(); // starting mediaplayer
-
+    private void playSong(int songIndex) {
+        mp.reset(); //stop current song
+        mp = MediaPlayer.create(getApplicationContext(), resID[songIndex]); // instantiate media player with new song
+        mp.start(); // start media player
     }
 
     @Override
     public void onDestroy() {
+        if (mp != null) {
+            mp.release();
+        }
         super.onDestroy();
-        mp.release();
     }
 }
