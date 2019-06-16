@@ -62,7 +62,7 @@
             android:layout_height="297dp"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:src="@drawable/hemanth1" />
+            android:src="@drawable/hemanth" />
 
     </LinearLayout>
 
