@@ -3,4 +3,14 @@
     <string name="settings">Settings</string>
     <string name="about">About</string>
     <string name="lead_developers">Lead Developers</string>
+    <string name="v1_0">v1.0</string>
+    <string name="idly">Idly ഇഡലി</string>
+    <string name="dosa">Dosa ദോശ</string>
+    <string name="upma">Upma ഉപ്പുമാവ്</string>
+    <string name="puttu">Puttu പുട്ട്</string>
+    <string name="rice">Rice ചോറ്</string>
+    <string name="chapathi">Chapathi ചപ്പാത്തി</string>
+    <string name="food">Food · ഭക്ഷണം</string>
+    <string name="family">Family · കുടുംബം</string>
+    <string name="sorry_there_s_nothing_to_change">Sorry, There\'s nothing to change</string>
 </resources>

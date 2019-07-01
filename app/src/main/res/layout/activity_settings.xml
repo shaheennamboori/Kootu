@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
         android:fontFamily="@font/montserrat"
-        android:text="Sorry, There's nothing to change"
+        android:text="@string/sorry_there_s_nothing_to_change"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
         android:gravity="center"/>
 

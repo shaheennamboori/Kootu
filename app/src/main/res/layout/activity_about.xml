@@ -12,10 +12,10 @@
         android:layout_height="80dp"
         android:fontFamily="@font/montserrat"
         android:gravity="center"
-        android:text="v1.0"
+        android:text="@string/v1_0"
         android:textAlignment="center"
         android:textAllCaps="false"
-        android:textSize="40sp"
+        android:textSize="@dimen/textsize40"
         android:textStyle="bold"
         android:typeface="normal"/>
 
@@ -38,7 +38,7 @@
         android:text="@string/lead_developers"
         android:textAlignment="center"
         android:textColor="@android:color/black"
-        android:textSize="30sp"
+        android:textSize="@dimen/textsize30"
         android:textStyle="bold" />
 
     <LinearLayout
