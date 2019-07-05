@@ -14,9 +14,9 @@
         android:layout_weight="1"
         android:background="@drawable/food"
         android:gravity="center"
-        android:text="Food · ഭക്ഷണം"
+        android:text="@string/food"
         android:textColor="@android:color/background_dark"
-        android:textSize="40sp"
+        android:textSize="@dimen/textsize40"
         android:textStyle="bold" />
 
     <TextView
@@ -27,9 +27,9 @@
         android:layout_weight="1"
         android:background="@drawable/family"
         android:gravity="center"
-        android:text="Family · കുടുംബം "
+        android:text="@string/family"
         android:textColor="@android:color/background_dark"
-        android:textSize="37sp"
+        android:textSize="@dimen/textsize37"
         android:textStyle="bold" />
 
 </LinearLayout>

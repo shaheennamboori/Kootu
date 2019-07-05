@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="textsize">35sp</dimen>
+    <dimen name="textsize35">35sp</dimen>
     <dimen name="textsize2">50sp</dimen>
+    <dimen name="textsize40">40sp</dimen>
+    <dimen name="textsize37">37sp</dimen>
+    <dimen name="textsize30">30sp</dimen>
+    <dimen name="textsize33">33sp</dimen>
+    <dimen name="textsize32">32sp</dimen>
 </resources>

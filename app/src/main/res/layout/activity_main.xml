@@ -21,9 +21,9 @@
             android:layout_weight="1"
             android:background="@drawable/idli"
             android:gravity="center"
-            android:text="Idly ഇഡലി "
+            android:text="@string/idly"
             android:textColor="@android:color/secondary_text_light"
-            android:textSize="@dimen/textsize"
+            android:textSize="@dimen/textsize35"
             android:textStyle="bold" />
 
         <TextView
@@ -34,9 +34,9 @@
             android:layout_weight="1"
             android:background="@drawable/dosa"
             android:gravity="center"
-            android:text="Dosa ദോശ "
+            android:text="@string/dosa"
             android:textColor="@android:color/secondary_text_light"
-            android:textSize="@dimen/textsize"
+            android:textSize="@dimen/textsize35"
             android:textStyle="bold" />
     </LinearLayout>
 
@@ -55,10 +55,10 @@
             android:layout_weight="1"
             android:background="@drawable/upma"
             android:gravity="center"
-            android:text="Upma ഉപ്പുമാവ് "
+            android:text="@string/upma"
             android:textAlignment="center"
             android:textColor="@android:color/secondary_text_light"
-            android:textSize="33sp"
+            android:textSize="@dimen/textsize33"
             android:textStyle="bold" />
 
         <TextView
@@ -69,9 +69,9 @@
             android:layout_weight="1"
             android:background="@drawable/puttu"
             android:gravity="center"
-            android:text="Puttu പുട്ട് "
+            android:text="@string/puttu"
             android:textColor="@android:color/secondary_text_light"
-            android:textSize="40sp"
+            android:textSize="@dimen/textsize40"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -91,9 +91,9 @@
             android:layout_weight="1"
             android:background="@drawable/rice"
             android:gravity="center"
-            android:text="Rice ചോറ് "
+            android:text="@string/rice"
             android:textColor="@android:color/secondary_text_light"
-            android:textSize="@dimen/textsize"
+            android:textSize="@dimen/textsize35"
             android:textStyle="bold" />
 
         <TextView
@@ -104,9 +104,9 @@
             android:layout_weight="1"
             android:background="@drawable/cpathi"
             android:gravity="center"
-            android:text="Chapathi ചപ്പാത്തി "
+            android:text="@string/chapathi"
             android:textColor="@android:color/secondary_text_light"
-            android:textSize="32sp"
+            android:textSize="@dimen/textsize32"
             android:textStyle="bold" />
     </LinearLayout>
 </LinearLayout>
